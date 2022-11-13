@@ -1,80 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" dir="ltr" name="viewport" content="width=device-width, initial-scale=1">
     <title>Ido Band</title>
     <link rel="icon" type="image/x-icon" href="https://thumbs.dreamstime.com/b/shuffle-random-icon-simple-illustration-vector-stock-174843066.jpg">
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body>
-    <header>
-        <img class="logo" src="./images/logo.jpg" alt = "logo" width="100", height="100" >    
-        <nav>
-            <ul class="nav-links">
-                <li><a href="index.html">Home Page</a></li>
-                <li><a href="#favo">Favourite Show</a></li>
-                <li><a href="#place">a place I enjoyed visiting </a></li>
-                <li><a href="#favofood"> Favourite Food </a></li>
-                <li><a href="schools.html"> Schools </a></li>
-                <li><a href="not-found-page.html"> 404 Error Page </a></li>
-                <li><a href="indexBS.html"> BootStrap demo Page</a></li>            
-            </ul>
-        </nav>
+<!-- /* uncomment '.dark' in 'style.css' to view dark mode ! */ -->
+<body class="dark">
+    <header class="header">
+        <a href="./index.html"><img class="logo" src="./images/logo.jpg" alt="logo"></a>
+        <a href="./index.html"><h1>WebDev Bootcamp</h1></a>
+        <img class="logo" id="user-img" src="./images/Profile.png">
     </header>
-    <h2 id = "favo">Favourite Show</h2>
-        my favourite show is:
-        <a href="https://www.imdb.com/title/tt0903747/" target="_blank"> Breaking Bad</a>
-    <p> 
-        <img class="reg-img" src="https://scontent.fhfa1-1.fna.fbcdn.net/v/t1.6435-9/52146396_10157159630507722_7830148658224955392_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=174925&_nc_ohc=bgNOQYHisRUAX-11h80&_nc_ht=scontent.fhfa1-1.fna&oh=00_AfC5xPV5Jo_-USbumOa8yK3F9PvkAf9KhXbA0emHfrKn2w&oe=6389D6D7"
-        alt="Breaking Bad logo"
-        width="200" 
-        height="200">
-    </p>
+    <aside class="sidebar">
+        <nav>
+        <ul class="nav-links">
+            <li><a class="odd">Navigation</a></li>
+            <li><a href="#show">My Favourite Show</a></li>
+            <li><a class="odd" href="#place">a place I enjoyed visiting</a></li>
+            <li><a href="#form">Feedback Form</a></li>
+            <li><a class="odd" href="./schools.html"target="_blank">My Schools <img src="./images/external-link.png" alt = "logo" width="15", height="15"></a></li>
+            <li><a href="https://github.com/IdoBand/IntroToWebDev/tree/Assignment-2" target="_blank"> This Project on GitHub <img src="./images/external-link.png" alt = "logo" width="15", height="15"></a></li>               
+        </ul>
+        </nav>
+    </aside>
 
-    <p>
-        <h3>Description</h3>
-        Breaking Bad is an American crime drama television series created and produced by Vince Gilligan. <br>
-        Set and filmed in Albuquerque, New Mexico, the series follows Walter White (Bryan Cranston), an underpaid, overqualified, and dispirited high-school chemistry teacher who is struggling with a recent diagnosis of stage-three lung cancer. White turns to a life of crime and partners with a former student, Jesse Pinkman (Aaron Paul), to produce and distribute crystal meth to secure his family's financial future before he dies, while navigating the dangers of the criminal underworld. The show aired on AMC from January 20, 2008, to September 29, 2013, consisting of five seasons for a total of 62 episodes. 
-    </p>
+    <main class="main-content">
+        <div class="opening">
+            <h1>Hello!</h1><br>
+            <h2>Welcome to my website.</h2><br>
+            <h2>My name is Ido Band. I am a student at the WebDev bootcamp.</h2><br>
+            <h2>&#128142 &nbsp &#128142 &nbsp &#128142</h2>
+        </div>
 
-    <p>
-        <h3>Why I like the show</h3>
-        The show is well written and includes talented actors that convey the plot in a suspensful manner.<br>
-            throughout the show, the characters evolve and story gets more interesting along the way.
-        <h3>a quote from the show</h3>
-         "I am the one who knocks"
-    </p>
+        <div id="show">
+            <div id="about-show">
+                <h2>My Favourite Show</h2>
 
-    <p>
-        <h2 id = place> a place I enjoyed visiting</h2> 
-        <h3>Iceland</h3>
-        Click on the globe
-        <a href="https://www.google.com/maps/place/Iceland/@64.8010944,-23.739707,6z/data=!3m1!4b1!4m5!3m4!1s0x48d22b52a3eb6043:0x6f8a0434e5c1459a!8m2!3d64.963051!4d-19.020835" target="_blank">&#127757</a> to check out Iceland on Google Maps! <br>
-        Iceland is located between the Greenland Sea and the North Atlantic Ocean. It is northwest of the United Kingdom, and is slightly smaller than the state of Kentucky. <br>
-        The land is plateau with mountain peaks, and ice fields, with a coastline marked by fjords, which are deep inlets carved by glaciers.
-    </p>
-    <div class="images">
-    <img class="reg-img" src="https://www.futurity.org/wp/wp-content/uploads/2022/09/Fagradalsfjall_volcano_1600.jpg"
-    alt="Active Volcano"
-    width="400" 
-    height="350">
-    <img class="reg-img" src ="https://guidetoiceland.imgix.net/732391/x/0/glaciers-in-iceland-3.jpg?ixlib=php-3.3.0&w=883"
-    alt="glaciers"
-    width="550" 
-    height="350">
-    <img class="reg-img" src="https://guidetoiceland.imgix.net/198987/x/0/"
-    alt="Aurora Lights"
-    width="550" 
-    height="350">
-    </div>
+                <h3>Description</h3>
+                Breaking Bad is an American crime drama television series created and produced by Vince Gilligan. <br>
+                Set and filmed in Albuquerque, New Mexico, the series follows Walter White (Bryan Cranston), an underpaid, overqualified, and dispirited high-school chemistry teacher who is struggling with a recent diagnosis of stage-three lung cancer. White turns to a life of crime and partners with a former student, Jesse Pinkman (Aaron Paul), to produce and distribute crystal meth to secure his family's financial future before he dies, while navigating the dangers of the criminal underworld. The show aired on AMC from January 20, 2008, to September 29, 2013, consisting of five seasons for a total of 62 episodes.<br> 
 
-    <p>
-    <h2 id = favofood> Favourite Food</h2>
-        <ol>
-            <li>Pizza</li>
-            <li>Cheeseburger</li>
-            <li>Noodles</li>
-          </ol>
-    </p>
+                <h3>Why I like the show</h3>
+                The show is well written and includes talented actors that convey the plot in a suspensful manner.<br>
+                    throughout the show, the characters evolve and story gets more interesting along the way.
+                <h3>a quote from the show</h3>
+                "I am the one who knocks"
+
+            </div>
+            <div class="images" id="show-image">
+                    <img class="bb-img" src="https://scontent.fhfa1-1.fna.fbcdn.net/v/t1.6435-9/52146396_10157159630507722_7830148658224955392_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=174925&_nc_ohc=bgNOQYHisRUAX-11h80&_nc_ht=scontent.fhfa1-1.fna&oh=00_AfC5xPV5Jo_-USbumOa8yK3F9PvkAf9KhXbA0emHfrKn2w&oe=6389D6D7"alt="Breaking Bad logo">
+                    <br>
+                <div class="butt">
+                    <a href="https://www.imdb.com/title/tt0903747/" target="_blank">Go and Check out <br>Breaking Bad on IMDB <img src="./images/external-link.png" alt = "logo" width="20", height="20"></a>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="place">
+            <h2 id="iceland-header"> a place I enjoyed visiting</h2> 
+            <div id="iceland-about">
+                <h3>Iceland</h3>
+                Iceland is located between the Greenland Sea and the North Atlantic Ocean. It is northwest of the United Kingdom, and is slightly smaller than the state of Kentucky.The land is plateau with mountain peaks, and ice fields, with a coastline marked by fjords, which are deep inlets carved by glaciers.
+            </div>
+            <br>
+            <div id="iceland-photos">
+
+                <img class="reg-img" src="https://www.futurity.org/wp/wp-content/uploads/2022/09/Fagradalsfjall_volcano_1600.jpg" alt="Active Volcano">
+        
+                <img class="reg-img" src ="https://images.prismic.io/film/ac6c9383-72d1-495e-a143-42f038d13e9c_DJI_0402-18.jpg?auto=compress%2Cformat&rect=0%2C386%2C3089%2C3089&w=600&h=600" alt="glaciers">
+
+                <img class="reg-img" src="https://guidetoiceland.imgix.net/198987/x/0/" alt="Aurora Lights">
+
+                <img class="reg-img" src="https://blog.ricksteves.com/cameron/files/2020/03/cameron-iceland-snaefllsnes-horses.jpg" alt="Horses">
+            </div>
+            <div class="images" id="google-maps" >
+                <br>
+                <div class="butt">
+                    <a href="https://www.google.com/maps/place/Iceland/@64.8010944,-23.739707,6z/data=!3m1!4b1!4m5!3m4!1s0x48d22b52a3eb6043:0x6f8a0434e5c1459a!8m2!3d64.963051!4d-19.020835" target="_blank">&#127757 Go and Check out <br>Iceland on Google Maps <img src="./images/external-link.png" alt = "logo" width="20", height="20"></a>
+                </div>
+            </div>
+        <br>
+        <div id="form">
+            <h1>Feedback Form</h1>
+            <h2>I'd love to hear your honest thoughts!</h2>
+            <form action="" method="get">
+                <div>
+                    <fieldset class="personal-details">
+                        <h4 class="sub-head">Personal Details</h4>
+
+                        <div class="full-name">
+                            <label for="fullname">Full Name:</label>
+                            <input id="full-name" name="full-name" type="text" pattern="[A-Za-z]+" required>
+                        </div>
+                        <div class="phone-number">
+                            <label for="phone-number">Phone Number:</label>
+                            <input id="phone-number" name="phone-number" type="number" pattern=“/d+”>
+                        </div>
+                        <div class="e-mail">
+                            <label for="e-mail">E-mail:</label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                            <input id="e-mail" name="e-mail" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                        </div>
+                        <div class="date-of-birth">
+                            <label for="date-of-birth">Date of Birth:</label>&nbsp&nbsp&nbsp&nbsp
+                            <input type="date" id="date-of-birth" name="date-of-birth" type="date" value="2000-01-01" min="1990-01-01" max="2050-01-01">
+                        </div>
+                    </fieldset>
+                </div>
+                <br>
+                <div>
+                    <fieldset class="your-feedback">
+                        <h4 class="sub-head">Your Feedback</h4>
+                        <div id="rating">
+                            <label for="rating">Rating:</label><br>
+                            <input type="radio" id="rating1" name="nums" value="1">
+                            
+                            <input type="radio" id="rating2" name="nums" value="2">
+                            
+                            <input type="radio" id="rating3" name="nums" value="3">
+                            
+                            <input type="radio" id="rating4" name="nums" value="4">
+                            
+                            <input type="radio" id="rating5" name="nums" value="5">
+                            <br>
+                            <label id="rating1">1</label>
+                            <label id="rating2">2</label>
+                            <label id="rating3">3</label>
+                            <label id="rating4">4</label>
+                            <label id="rating5">5</label>
+                        </div>
+                            <div id="your-message">
+                            <label for="your-message">Your message:</label>
+                            <textarea name="your-message" cols="50" rows="10" ></textarea>
+                        </div>
+                        <div id="select">
+                            <label for="source">How did you find this website?</label>
+                            <br>
+                            <select name="source" id="source">
+                                <option value=""></option>
+                                <option value="github">GitHub</option>
+                                <option value="linkedin">Linkedin</option>
+                                <option value="webdev">WebDev</option>
+                                <option value="google">Google</option>
+                                <option value="other">Other</option>
+                            </select>
+                            
+                        </div>
+                    </fieldset>
+                </div>
+                <br>
+                <div class="buttons">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </div>
+            </form>
+        </div>
+        
+    </main>
+
+    <footer class="footer">
+        <h2>Ido Band</h2>
+        <a href="mailto:ido.bandd@gmail.com">ido.bandd@gmail.com</a>
+    </footer>
+    
 </body>
 </html>
